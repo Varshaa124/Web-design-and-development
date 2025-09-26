@@ -1,10 +1,19 @@
 <?php
-$fruits = ["Apple", "Banana", "Cherry", "Mango"];
-echo "Original array: ";
-print_r($fruits);
-$removed = array_shift($fruits);
-echo "Removed element: " . $removed . "\n";
-echo "Array after removing first element: ";
-print_r($fruits);
+$mail = "admin@example.com";
+$mail = str_replace("a","@",$mail);
+echo "Contact me at $mail.";
 ?>
 
+OUTPUT: Contact me at @dmin@ex@mple.com.
+
+
+ <?php
+$names = array("alex", "jean", "emily", "jane");
+$name = preg_grep("/^e/", $names);
+print_r($name);
+?>
+
+OUTPUT: Array
+(
+[2] => emily
+)
